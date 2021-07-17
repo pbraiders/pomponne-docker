@@ -1,0 +1,9 @@
+.env
+.git/
+.gitattributes
+.github/
+.gitignore
+LICENSE
+ojullien/
+*.md
+!README.md
