@@ -1,9 +1,9 @@
 FROM ubuntu:latest
 
-LABEL Description="PBRaiders vanilla"
+LABEL Description="PBRaiders pomponne"
 LABEL Vendor="Olivier Jullien"
 LABEL License="MIT"
-LABEL Version=vanilla
+LABEL Version=pomponne
 
 RUN apt-get update \
     && export DEBIAN_FRONTEND=noninteractive;apt-get install -y tzdata;dpkg-reconfigure --frontend noninteractive tzdata \
