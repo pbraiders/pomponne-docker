@@ -6,7 +6,7 @@ LABEL License="MIT"
 LABEL Version=pomponne
 
 RUN apt-get update \
-    && export DEBIAN_FRONTEND=noninteractive;apt-get install -y tzdata;dpkg-reconfigure --frontend noninteractive tzdata \
+    && export DEBIAN_FRONTEND=noninteractive;apt-get install -y tzdata apt-utils;dpkg-reconfigure --frontend noninteractive tzdata \
     && apt-get -y install apache2 php7.4 php7.4-bz2 php7.4-fpm php7.4-gd php7.4-intl php7.4-mbstring php7.4-mysql php7.4-xml php7.4-zip mariadb-server \
     && apt-get -y clean && apt-get -y autoremove && rm -rf /var/cache/apt/* \
     && sync
